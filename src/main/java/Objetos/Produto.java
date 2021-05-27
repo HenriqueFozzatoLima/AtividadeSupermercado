@@ -13,13 +13,13 @@ public class Produto {
     private String nomeProduto = "";
     private String descricao = "";
     private double valorUnit = 0;
-    private int qtd = 0;
+    private int qtd;
     private int codProduto = 0;
-    private double valorTotal = (valorUnit*qtd);
+    private String fornecedor = ""; 
     
-    Fornecedor forn = new Fornecedor();
-    
-    private String cnpjFornecedor = forn.getCnpj();
+//    Fornecedor forn = new Fornecedor();
+//    
+//    private String cnpjFornecedor = forn.getCnpj();
 
     /**
      * @return the nomeProduto
@@ -91,35 +91,42 @@ public class Produto {
         this.codProduto = codProduto;
     }
 
-    /**
-     * @return the valorTotal
-     */
-    public double getValorTotal() {
-        return valorTotal;
-    }
+//    /**
+//     * @return the valorTotal
+//     */
+//    public double getValorTotal() {
+//        return valorTotal;
+//    }
+//
+//    /**
+//     * @param valorTotal the valorTotal to set
+//     */
+//    public void setValorTotal(double valorTotal) {
+//        this.valorTotal = valorTotal;
+//    }
 
-    /**
-     * @param valorTotal the valorTotal to set
-     */
-    public void setValorTotal(double valorTotal) {
-        this.valorTotal = valorTotal;
-    }
-
-    /**
-     * @return the cnpjFornecedor
-     */
-    public String getCnpjFornecedor() {
-        return cnpjFornecedor;
-    }
-
-    /**
-     * @param cnpjFornecedor the cnpjFornecedor to set
-     */
-    public void setCnpjFornecedor(String cnpjFornecedor) {
-        this.cnpjFornecedor = cnpjFornecedor;
-    }
     
     
+    
+    public double getValorTotal(){
+        return valorUnit*qtd;
+    }
+
+    /**
+     * @return the fornecedor
+     */
+    public String getFornecedor() {
+        return fornecedor;
+    }
+
+    /**
+     * @param fornecedor the fornecedor to set
+     */
+    public void setFornecedor(String fornecedor) {
+        this.fornecedor = fornecedor;
+    }
+
+  
     
     
     

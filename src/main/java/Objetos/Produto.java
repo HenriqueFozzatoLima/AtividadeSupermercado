@@ -91,22 +91,8 @@ public class Produto {
         this.codProduto = codProduto;
     }
 
-//    /**
-//     * @return the valorTotal
-//     */
-//    public double getValorTotal() {
-//        return valorTotal;
-//    }
-//
-//    /**
-//     * @param valorTotal the valorTotal to set
-//     */
-//    public void setValorTotal(double valorTotal) {
-//        this.valorTotal = valorTotal;
-//    }
 
-    
-    
+
     
     public double getValorTotal(){
         return valorUnit*qtd;
